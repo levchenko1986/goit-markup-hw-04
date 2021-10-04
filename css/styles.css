@@ -31,10 +31,16 @@ img {
     color: inherit;
 }
 .mail-opacity:hover,
-.mail-opacity:focus,
-.link:hover, .link-envelope:hover,
-.link:focus, .link-envelope:focus {
+.mail-opacity:focus {
     color: var(--logo-color);
+}
+.link:hover, 
+.link:focus {
+    color: var(--logo-color);
+
+}
+.link:hover .link-envelope,
+.link:focus .link-envelope {
     fill: var(--logo-color);
 }
 .btn-chapters:hover,
@@ -343,16 +349,18 @@ img {
     height: 44px;
     border-radius: 50%;
 }
-.social-list-link:hover,
-.social-list-icon:hover,
-.social-list-link:focus,
-.social-list-icon:focus,
-.social-list-icon:hover {
-    background-color:var(--logo-color);
-    fill: #ffffff;
-}
 .social-list-icon {
     fill: #AFB1B8;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--logo-color);
+}
+.social-list-link:hover
+.social-list-icon,
+.social-list-link:focus
+.social-list-icon {
+    fill: #ffffff;
 }
 .client-list-wrapper {
     display: flex;
@@ -376,11 +384,14 @@ img {
     border: 1px solid var(--logo-color);
     border-radius: 4px;
 }
-.clients-list-ico:hover, 
-.clients-list-link:hover {
+.clients-list-ico:hover,
+.clients-list-ico:focus {
     fill: var(--logo-color);
 }
-
+.clients-list-link:hover .clients-list-ico,
+.clients-list-link:focus .clients-list-ico {
+    fill: var(--logo-color);
+}
 /* ------PROJECTS SECTION------ */
 .projects {
     display: flex;
