@@ -11,7 +11,12 @@ h3,
 p {
 	margin-top: 0;
 }
-h2 {
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     margin-bottom: 50px;
 }
 img {
@@ -37,7 +42,6 @@ img {
 .link:hover, 
 .link:focus {
     color: var(--logo-color);
-
 }
 .link:hover .link-envelope,
 .link:focus .link-envelope {
@@ -70,7 +74,6 @@ img {
     padding-left: 0;
     margin: 0;
 }
-
 .lists:not(:last-child) {
     margin-right: 30px;
 }
@@ -147,14 +150,9 @@ img {
     margin-left: auto;
 }
 .envelope-wrap {
-
     display: flex;
-
-
-
 }
 .link-envelope {
-
     align-items: center;
     margin-right: 10px;
     fill: #757575;
@@ -244,12 +242,14 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 30px * 4) / 4);
-    position: relative;
 }
 .quality-border {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
+    margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
 }
@@ -259,17 +259,14 @@ img {
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-
-
 }
 .quality-img { 
-    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    justify-content: center;
 }
 .quality-text-wrapper {
-    padding-top: 150px;
+    display: block;
 }
 .quality-subtitle {
     font-weight: 700;
@@ -288,13 +285,6 @@ img {
     color: var(--text-grey);
 }
 /* ------DIRECTIONS SECTION------ */
-.directions-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-}
 .directions-box {
     display: flex;
     flex-wrap: wrap;
@@ -311,13 +301,6 @@ img {
 /* ------SPECIALISTS SECTION------ */
 .specialists {
     background-color: #F5F4FA;
-}
-.specialists-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
 }
 .specialists-box {
     display: flex;
@@ -358,7 +341,9 @@ img {
 }
 .social-list {
     display: flex;
-    justify-content: space-between;
+}
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
 }
 .social-list-link {
     display: flex;
