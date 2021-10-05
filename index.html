@@ -12,7 +12,7 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <header class="head">
+    <header class="header">
         <div class="container">
             <div class="head-container">
                 <nav class="head-nav">
@@ -27,17 +27,21 @@
                     </ul>
                 </nav>
                 <ul class="mail list">
-                    <li class="lists"><a class="link" href="#">
-                        <svg class="link-envelope" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
+                    <li class="lists"><a class="link envelope-center" href="#">
+                        <div class="envelope-wrap">
+                            <svg class="link-envelope" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        </div>
+                            info@devstudio.com</a>
                     </li>
-                    <li class="lists"><a class="link" href="#">
-                        <svg class="link-envelope" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-vector"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
+                    <li class="lists"><a class="link envelope-center" href="#">
+                        <div class="envelope-wrap">
+                            <svg class="link-envelope" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-vector"></use>
+                            </svg>
+                        </div>
+                            +38 096 111 11 11</a>
                     </li>
                 </ul>
             </div>
@@ -53,45 +57,52 @@
             </div>
         </section>
         <section class="quality section">
+            <h2 class="visually-hidden">Качества</h2>  <!-- скрытый элемент -->
             <div class="container">
-                <div class="quality-img-wrapper">
-                    <ul class="quality-lists list">
-                        <li class="quality-img-box">
+                <ul class="quality-lists list">
+                    <li class="list quality-img-box">
+                        <div class="quality-border">
                             <svg class="quality-img" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-antenna"></use>
                             </svg>
-                        <li class="quality-img-box">
+                        </div>
+                        <div class="quality-text-wrapper">
+                            <h3 class="quality-subtitle">Внимание к деталям</h3>
+                            <p class="quality-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                        </div>
+                    </li>
+                    <li class="list quality-img-box">
+                        <div class="quality-border">
                             <svg class="quality-img" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-astronaut"></use>
                             </svg>
-                        <li class="quality-img-box">
+                            <div class="quality-text-wrapper">
+                                <h3 class="quality-subtitle">Пунктуальность</h3>
+                                <p class="quality-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list quality-img-box">
+                        <div class="quality-border">
                             <svg class="quality-img" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-clock"></use>
                             </svg>
-                        </li>
-                        <li class="quality-img-box">
+                            <div class="quality-text-wrapper">
+                                <h3 class="quality-subtitle">Планирование</h3>
+                                <p class="quality-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list quality-img-box">
+                        <div class="quality-border">
                             <svg class="quality-img" width="70" height="70">
                                 <use href="./images/sprite.svg#icon-diagram"></use>
                             </svg>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="quality-box">
-                    <li class="quality-list list">
-                        <h3 class="quality-subtitle">Внимание к деталям</h3>
-                        <p class="quality-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="quality-list list">
-                        <h3 class="quality-subtitle">Пунктуальность</h3>
-                        <p class="quality-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="quality-list list">
-                        <h3 class="quality-subtitle">Планирование</h3>
-                        <p class="quality-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li >
-                    <li class="quality-list list">
-                        <h3 class="quality-subtitle">Современные технологии</h3>
-                        <p class="quality-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                            <div class="quality-text-wrapper">
+                                <h3 class="quality-subtitle">Современные технологии</h3>
+                                <p class="quality-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
